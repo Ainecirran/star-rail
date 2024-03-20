@@ -1,0 +1,54 @@
+/* картинка с опсанием меню */
+#sait_content {
+    height: 0;
+    width: 80vw;
+    margin-left: 10vw;
+    transition: 1s;
+    overflow: hidden;
+}
+
+/* новости - каталог карточек версии */
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border: 0.3vw solid gold;
+    border-radius: 2vw;
+    overflow: hidden;
+    margin-top: 2vw;
+    margin-left: 10vw;
+    width: 20vw;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+.short_description {
+    padding: 1vw;
+}
+/* новости в админе.пхп */
+.content_admin {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.card_admin {
+    border: 1px solid azure;
+    margin-top: 2vw;
+    width: 15%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* отступ футера */
+.end {
+    margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        width: 35vw;
+        margin-top: 4vw;
+    }
+}

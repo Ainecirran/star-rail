@@ -1,0 +1,57 @@
+.main_menu {
+    background-color: black;
+    width: 100%;
+}
+.menu {
+    width: 90%;
+    margin-left: 5%;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_item {
+    color: azure;
+    font-size: 1.5vw;
+    opacity: 0.8;
+}
+.menu_item:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* выпадающее меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 15vw;
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 0.5vw 0;
+    display: block;
+}
+.dropdown > p {
+    font-size: 1.5vw;
+}
+.dropdown-content a:hover {background-color: black;}
+.dropdown:hover .dropdown-content { display: block; }
+
+/* логотип и название */
+.logo_name {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 6vw;
+    height: 3vw;
+}
+.name {
+    color: azure;
+    font-size: 2.5vw;
+}

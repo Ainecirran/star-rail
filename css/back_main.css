@@ -1,0 +1,14 @@
+/* бэкграунд */
+.overlay {
+    background-color: black;
+    z-index: -100;
+    position: fixed;
+    width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+video {
+    opacity: 0.5;
+    min-height: 100vh;
+}

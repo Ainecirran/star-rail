@@ -1,0 +1,87 @@
+/* форма + кнопка submit и радиобатоны */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    gap: 1vw;
+}
+input {
+    width: 100%;
+    height: 2vw;
+    min-height: 20px;
+}
+.submit {
+    width: 100%;
+    height: 2.5vw;
+    background-color: black;
+    border: 1px solid gold;
+    color: gold;
+}
+
+.main_uni_choice {
+    width: 40%;
+    margin-left: 30%;
+    row-gap: 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main_uni_choice > label {
+    width: 25%;
+}
+label {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+label > .rad {
+    visibility: hidden;
+    position: absolute;
+}
+label > .rad + img{
+  cursor:pointer;
+  border-radius: 10%;
+  background-color: black;
+}
+label > p {
+    font-size: 1.5vw;
+}
+label > .rad:checked + img{
+  border: 1px solid gold;
+}
+label > input {
+    width: auto;
+}
+.sub_uni_choice {
+    width: 90%;
+    margin-left: 5%;
+    row-gap: 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub_uni_choice > label {
+    width: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    .main_uni_choice {
+        width: 70%;
+        margin-left: 15%;
+    }
+    label > img {
+        width: 20vw;
+        height: auto;
+    }
+    .sub_uni_choice > label {
+        width: auto;
+        height: auto;
+    }
+    label > p {
+        font-size: 3vw;
+    }
+}

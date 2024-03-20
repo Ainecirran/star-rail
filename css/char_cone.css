@@ -1,0 +1,206 @@
+/* общая инфа о персе или конусе */
+.character_page, .lightcone_page {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    display: flex;
+}
+
+/* картинка перса, конуса */
+.character_img {
+    width: 55%;
+    height: 55%;
+}
+/* --------------------------------------------------------------------------------- */
+/* инфа справа от картинки перса */
+.character_info {
+    margin-left: 5%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* разбиение имени \ элемента \ пути */
+.character_info1 {
+    width: 33%;
+    height: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.character_name {
+    font-size: 3vw;
+    font-weight: 700;
+    color: gold;
+}
+.character_element_img, .character_path_img {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0 3vw;
+}
+.star_images_char {
+    display: flex;
+    height: 3vw;
+}
+.star_images_lc {
+    display: flex;
+    height: 5vw;
+}
+.star_img {
+    width: 2vw;
+    height: 2vw;
+}
+.traces, .char_abilities, .eidolons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.trace, .eid, .char_ability {
+    width: 80%;
+    padding: 0.5vw;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    text-align: justify;
+}
+.trace > img, .char_ability > img {
+    width: 30%;
+    max-width: 150px;
+    margin: 1vw;
+    float: left;
+    height: auto;
+}
+.eid > img {
+    width: 30%;
+    max-width: 500px;
+    margin: 1vw;
+    float: left;
+    height: auto;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* лайт конусы */
+.lightcone_info {
+    margin-left: 5vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+.lightcone_img {
+    width: 35vw;
+    height: 50vw;
+}
+
+/* разбиение имени и пути */
+.lightcone_info2 {
+    display: flex;
+}
+.lightcone_info1 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lightcone_name {
+    font-size: 3vw;
+    font-weight: 700;
+    color: gold;
+}
+
+.lightcone_path_img {
+    width: 6vw;
+    height: 6vw;
+    margin: 0 3vw;
+}
+.lightcone_ability {
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* статы */
+.character_stats {
+    margin: 5vw 0 2vw 0;
+    width: 100%;
+    gap: 13%;
+}
+.lightcone_stats {
+    margin: 1vw 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13%;
+}
+.stat {
+    width: 40%;
+    font-size: 2.5vw;
+    padding: 0.5vw;
+}
+.img_stat {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+/* описание и способность */
+
+.char_desc, .lightcone_desc {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2vw;
+}
+/* описание персонажа и конуса */
+.description {
+    font-size: 2.5vw;
+    line-height: 4vw;
+}
+
+@media screen and (max-width: 850px) {
+    .character_page, .lightcone_page {
+        display: block;
+    }
+    .character_img, .lightcone_img {
+        margin-left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .character_info, .lightcone_info {
+        width: 100%;
+    }
+    .character_info1 {
+        width: 30%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .character_info1 > p, .lightcone_info1 > h3 {
+        font-size: 6vw;
+    }
+    .lightcone_info1 > p {
+        font-size: 5vw;
+    }
+    .character_element_img, .character_path_img, .lightcone_path_img {
+        width: 10vw;
+        height: 10vw;
+    }
+    .character_stats {
+        margin-top: 15vw;
+    }
+    .stat {
+        font-size: 5vw;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .lightcone_info {
+        width: 90%;
+    }
+    .eid, .trace, .char_ability {
+        padding: 2vw;
+    }
+    .description {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .img_stat {
+        width: 4vw;
+        height: 4vw;
+    }
+}

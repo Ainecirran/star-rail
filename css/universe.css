@@ -1,0 +1,39 @@
+.bless_list, .curios_list {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4vw;
+}
+.bless, .curios {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.bless > h1 {
+    font-size: 3vw;
+    margin: 0.5vw 0;
+}
+.bless > h3 {
+    text-align: left;
+    color: white;
+    font-size: 2.5vw;
+    margin: 0.1vw 0.1vw;
+}
+.bless > img, .curios > img {
+    width: 20%;
+    margin: 0 5% 0 0;
+    height: auto;
+    float: left;
+}
+@media screen and (max-width: 850px) {
+    .bless > h1 {
+        font-size: 5vw;
+    }
+    .bless > h3 {
+        font-size: 5vw;
+    }
+    .curios > img, .bless > img {
+        width: 30%;
+    }
+}

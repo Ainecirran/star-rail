@@ -1,0 +1,68 @@
+/* таблица персонажей */
+.character_list {
+    width: 70%;
+    margin-left: 15%;
+    border: 0.3vw solid gold;
+    border-spacing: 0 0.5vw;
+    padding: 0 0.5vw;
+}
+tr {
+    margin-top: 1vw;
+}
+th {
+    padding: 1%;
+    font-size: 2vw;
+    border: solid white;
+    border-width: 0.3vw 0.15vw;
+    text-align: center;
+}
+td {
+    padding: 1%;
+    width: 18%;
+    height: 10vw;
+    border: solid white;
+    border-width: 0.3vw 0.15vw;
+    text-align: center;
+}
+.a {
+    width: 100%;
+}
+.table_img_main {
+    height: 8vw;
+    width: 6vw;
+}
+.table_img {
+    height: 6vw;
+    width: 6vw;
+}
+/* раритетность */
+.star_imgs {
+    margin-left: 20%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.star {
+    width: 25%;
+    height: 100%;
+}
+@media screen and (max-width: 850px) {
+    .character_list {
+        width: 100%;
+        margin: 0;
+    }   
+    .hide {
+        display: none;
+    }
+    .table_img_main {
+        height: 25vw;
+        width: 20vw;
+    }
+    .table_img {
+        width: 16vw;
+        height: 16vw;
+    }
+    td > a > p {
+        font-size: 5vw;
+    }
+}
